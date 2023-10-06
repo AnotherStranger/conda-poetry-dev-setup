@@ -40,8 +40,9 @@ if [[ "$latest_release" != "v$CURRENT_VERSION" ]]; then
     echo "Result: $ask_question_result"
 
     if [ $ask_question_result -eq 0 ]; then
-        wget "https://github.com/$GITHUB_REPO/releases/download/$latest_release/dev-setup.sh" -O "dev-setup.sh"
-        chmod +x "dev-setup.sh"
+        wget "https://github.com/$GITHUB_REPO/releases/download/$latest_release/dev-setup.sh" -O "dev-setup-next.sh"
+        chmod +x "dev-setup-next.sh"
+        mv "dev-setup-next.sh" "dev-setup.sh"
         echo "Update successfully. Please re-run the script."
         exit 0
     else
