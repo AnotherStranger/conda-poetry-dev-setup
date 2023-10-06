@@ -2,7 +2,7 @@
 
 # Ensure script is called correctly using source
 # Ignore shellcheck warining. not accessing an index is intentional here
-# shellcheck disable=SC2128 
+# shellcheck disable=SC2128
 if [ "$0" != "$BASH_SOURCE" ]; then
     echo "Performing Development setup..."
 else
@@ -41,5 +41,5 @@ else
     exit 1
 fi
 
-echo "Environment setup finished successfully." 
+echo "Environment setup finished successfully."
 echo "Please ensure to set python interpreter of your IDE to the conda environment $CONDA_ENV"
