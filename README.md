@@ -9,8 +9,9 @@ It automates following steps:
 
 ## HowTo
 
-To use this script simply download it and put it in your project next to
-your env.yml and pyproject.toml.
+To use this script simply download it 
+[here](https://github.com/AnotherStranger/conda-poetry-dev-setup/releases)
+and put it in your project next to your env.yml and pyproject.toml.
 Then run:
 ```bash
 source ./dev-setup.sh
