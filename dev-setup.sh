@@ -1,5 +1,56 @@
 #!/usr/bin/env bash
 
+# Define the current version of the script
+CURRENT_VERSION="0.0.1"
+# GitHub repository to check for releases
+GITHUB_REPO="AnotherStranger/conda-poetry-dev-setup"
+
+# Function to get the latest release version from GitHub repository
+get_latest_release() {
+    local repository="$1"
+    latest_release=$(curl -s "https://api.github.com/repos/$repository/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+}
+
+# Function to ask the yes/no question and return a boolean value
+ask_question() {
+    local question="$1"
+    while true; do
+        echo "$question (yes/no)" >"$(tty)"
+        read -r choice
+
+        # Check the user input
+        if [ "$choice" == "yes" ]; then
+            return 0 # Return 0 for true (yes)
+        elif [ "$choice" == "no" ]; then
+            return 1 # Return 1 for false (no)
+        else
+            echo "Invalid choice. Please enter 'yes' or 'no'." >"$(tty)"
+        fi
+    done
+}
+
+# Get the latest release version
+get_latest_release "$GITHUB_REPO"
+
+# Check if the latest release version is different from the current version
+if [[ "$latest_release" != "$CURRENT_VERSION" ]]; then
+    echo "A new release is available: $latest_release!"
+    ask_question "Do you want to update?"
+    ask_question_result=$?
+    echo "Result: $ask_question_result"
+
+    if [ $ask_question_result -eq 0 ]; then
+        wget "https://github.com/$GITHUB_REPO/releases/download/$latest_release/dev-setup.sh" -O "dev-setup.sh"
+        chmod +x "dev-setup.sh"
+        echo "Update successfully. Please re-run the script."
+        exit 0
+    else
+        echo "Update skipped."
+    fi
+else
+    echo "No new releases found."
+fi
+
 # Ensure script is called correctly using source
 # Ignore shellcheck warining. not accessing an index is intentional here
 # shellcheck disable=SC2128

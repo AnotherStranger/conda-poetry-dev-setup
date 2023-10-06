@@ -120,6 +120,28 @@
       }
     ],
     [
+      "semantic-release-replace-plugin",
+      {
+        "replacements": [
+          {
+            "files": ["dev-setup.sh"],
+            "from": "\nCURRENT_VERSION=\".*\"\n",
+            "to": "\nCURRENT_VERSION=\"${nextRelease.version}\"\n",
+            "results": [
+              {
+                "file": "dev-setup.sh",
+                "hasChanged": true,
+                "numMatches": 1,
+                "numReplacements": 1
+              }
+            ],
+            "countMatches": true
+          }
+        ]
+      }
+    ],
+
+    [
       "@semantic-release/github",
       {
         "assets": [
