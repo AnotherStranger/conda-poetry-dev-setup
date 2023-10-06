@@ -33,7 +33,7 @@ ask_question() {
 get_latest_release "$GITHUB_REPO"
 
 # Check if the latest release version is different from the current version
-if [[ "$latest_release" != "$CURRENT_VERSION" ]]; then
+if [[ "$latest_release" != "v$CURRENT_VERSION" ]]; then
     echo "A new release is available: $latest_release!"
     ask_question "Do you want to update?"
     ask_question_result=$?
