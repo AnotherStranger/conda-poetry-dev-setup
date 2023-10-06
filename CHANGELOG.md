@@ -1,3 +1,20 @@
+## [1.1.3](https://github.com/AnotherStranger/conda-poetry-dev-setup/compare/v1.1.2...v1.1.3) (2023-10-06)
+
+
+### Build System
+
+* Merge branch 'main' of github.com:AnotherStranger/conda-poetry-dev-setup ([49db435](https://github.com/AnotherStranger/conda-poetry-dev-setup/commit/49db435935449264bd47449b9fc07c88958b965d))
+
+
+### Bug Fixes
+
+* :recycle: use safer update code ([b66cfdb](https://github.com/AnotherStranger/conda-poetry-dev-setup/commit/b66cfdbf0640da27b9b3aa55045c2e1560e0cdaf))
+
+
+### Code Refactoring
+
+* :recycle: use better update-process ([1448323](https://github.com/AnotherStranger/conda-poetry-dev-setup/commit/144832319ddc23f39f2ea15b03fadbe9732073e6))
+
 ## [1.1.2](https://github.com/AnotherStranger/conda-poetry-dev-setup/compare/v1.1.1...v1.1.2) (2023-10-06)
 
 
