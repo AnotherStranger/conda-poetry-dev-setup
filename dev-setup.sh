@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Define the current version of the script
-CURRENT_VERSION="1.1.1"
+CURRENT_VERSION="1.1.2"
 # GitHub repository to check for releases
 GITHUB_REPO="AnotherStranger/conda-poetry-dev-setup"
 
