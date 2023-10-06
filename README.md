@@ -8,6 +8,7 @@ It automates following steps:
 3. It activates the environment, installs, and updates the poetry project.
 
 ## HowTo
+
 To use this script simply download it and put it in your project next to
 your env.yml and pyproject.toml.
 Then run:
