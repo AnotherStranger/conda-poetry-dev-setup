@@ -1,3 +1,15 @@
+## [1.1.0](https://github.com/AnotherStranger/conda-poetry-dev-setup/compare/v1.0.0...v1.1.0) (2023-10-06)
+
+
+### Features
+
+* :sparkles: add update function ([2a8e27f](https://github.com/AnotherStranger/conda-poetry-dev-setup/commit/2a8e27f819d84c74adb931ec67b90b0ed85f27c8))
+
+
+### Bug Fixes
+
+* :green_heart: add replace-plugin for semantic release ([5deba8b](https://github.com/AnotherStranger/conda-poetry-dev-setup/commit/5deba8bb3509bb58372fd459185560c0c5d7b1cb))
+
 ## 1.0.0 (2023-10-06)
 
 
