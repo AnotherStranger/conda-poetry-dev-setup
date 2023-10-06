@@ -160,7 +160,7 @@
       "@semantic-release/git",
       {
         "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}",
-        "assets": ["CHANGELOG.md"]
+        "assets": ["CHANGELOG.md", "dev-setup.sh"]
       }
     ]
   ]
