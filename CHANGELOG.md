@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/AnotherStranger/conda-poetry-dev-setup/compare/v1.1.0...v1.1.1) (2023-10-06)
+
+
+### Bug Fixes
+
+* :green_heart: commit replaced version string ([51a5d67](https://github.com/AnotherStranger/conda-poetry-dev-setup/commit/51a5d67eb74e0b256daedb1fd71ff5d8b5a12408))
+
 ## [1.1.0](https://github.com/AnotherStranger/conda-poetry-dev-setup/compare/v1.0.0...v1.1.0) (2023-10-06)
 
 
