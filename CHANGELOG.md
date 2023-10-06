@@ -1,3 +1,15 @@
+## [1.1.2](https://github.com/AnotherStranger/conda-poetry-dev-setup/compare/v1.1.1...v1.1.2) (2023-10-06)
+
+
+### Documentation
+
+* add link to releases ([b6c6c62](https://github.com/AnotherStranger/conda-poetry-dev-setup/commit/b6c6c62ff61c9d18408b996bd954852468fd4659))
+
+
+### Bug Fixes
+
+* :bug: use correct version compare ([b909182](https://github.com/AnotherStranger/conda-poetry-dev-setup/commit/b9091828cce89bfcedb04c633609d040387023a4))
+
 ## [1.1.1](https://github.com/AnotherStranger/conda-poetry-dev-setup/compare/v1.1.0...v1.1.1) (2023-10-06)
 
 
