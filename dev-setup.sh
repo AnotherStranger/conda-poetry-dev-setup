@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+main() {
 # Define the current version of the script
 CURRENT_VERSION="1.1.1"
 # GitHub repository to check for releases
@@ -19,9 +19,9 @@ ask_question() {
         read -r choice
 
         # Check the user input
-        if [ "$choice" == "yes" ]; then
+        if [ "$choice" = "yes" ]; then
             return 0 # Return 0 for true (yes)
-        elif [ "$choice" == "no" ]; then
+        elif [ "$choice" = "no" ]; then
             return 1 # Return 1 for false (no)
         else
             echo "Invalid choice. Please enter 'yes' or 'no'." >"$(tty)"
@@ -44,7 +44,6 @@ if [[ "$latest_release" != "v$CURRENT_VERSION" ]]; then
         chmod +x "dev-setup-next.sh"
         mv "dev-setup-next.sh" "dev-setup.sh"
         echo "Update successfully. Please re-run the script."
-        exit 0
     else
         echo "Update skipped."
     fi
@@ -90,8 +89,8 @@ if $CONDA_CMD activate "$CONDA_ENV" 2>/dev/null || conda activate "$CONDA_ENV" 2
     poetry install
 else
     echo "Failed to activate the conda environment."
-    exit 1
 fi
 
 echo "Environment setup finished successfully."
 echo "Please ensure to set python interpreter of your IDE to the conda environment $CONDA_ENV"
+}; { main "$@" ;}
