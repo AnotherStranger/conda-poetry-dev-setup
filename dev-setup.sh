@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 main() {
 # Define the current version of the script
-CURRENT_VERSION="1.1.3"
+CURRENT_VERSION="1.2.0-rc.2"
 # GitHub repository to check for releases
 GITHUB_REPO="AnotherStranger/conda-poetry-dev-setup"
+# The ENV File to use
+CONDA_ENV_YML="${1:-env.yml}"
 
 # Function to get the latest release version from GitHub repository
 get_latest_release() {
@@ -72,14 +74,14 @@ else
     exit 1
 fi
 
-# Extract the conda environment name from env.yml
-CONDA_ENV=$(grep 'name:' env.yml | cut -f 2 -d ' ')
+# Extract the conda environment name from "$CONDA_ENV_YML"
+CONDA_ENV=$(grep 'name:' "$CONDA_ENV_YML" | cut -f 2 -d ' ')
 
 # Check if the conda environment already exists
 if $CONDA_CMD env list | grep -q "$CONDA_ENV"; then
-    $CONDA_CMD env update -f env.yml
+    $CONDA_CMD env update -f "$CONDA_ENV_YML"
 else
-    $CONDA_CMD env create -f env.yml
+    $CONDA_CMD env create -f "$CONDA_ENV_YML"
 fi
 
 # Activate the conda environment and execute poetry install
