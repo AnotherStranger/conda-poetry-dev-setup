@@ -1,3 +1,10 @@
+## [1.2.0-rc.1](https://github.com/AnotherStranger/conda-poetry-dev-setup/compare/v1.1.3...v1.2.0-rc.1) (2024-02-28)
+
+
+### Features
+
+* :sparkles: make env.yml configurable. ([4ce83b4](https://github.com/AnotherStranger/conda-poetry-dev-setup/commit/4ce83b48931c14a41ab1e992f01e0a06ff16d1a1))
+
 ## [1.1.3](https://github.com/AnotherStranger/conda-poetry-dev-setup/compare/v1.1.2...v1.1.3) (2023-10-06)
 
 
