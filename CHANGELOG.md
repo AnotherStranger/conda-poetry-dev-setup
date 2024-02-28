@@ -1,3 +1,10 @@
+## [1.2.0-rc.2](https://github.com/AnotherStranger/conda-poetry-dev-setup/compare/v1.2.0-rc.1...v1.2.0-rc.2) (2024-02-28)
+
+
+### Code Refactoring
+
+* update node action ([59d23cd](https://github.com/AnotherStranger/conda-poetry-dev-setup/commit/59d23cd1dee8af87bcb6855073629c0029a0aa85))
+
 ## [1.2.0-rc.1](https://github.com/AnotherStranger/conda-poetry-dev-setup/compare/v1.1.3...v1.2.0-rc.1) (2024-02-28)
 
 
