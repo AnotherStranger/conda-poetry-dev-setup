@@ -1,3 +1,21 @@
+## [1.2.0](https://github.com/AnotherStranger/conda-poetry-dev-setup/compare/v1.1.3...v1.2.0) (2024-02-28)
+
+
+### Build System
+
+* **release:** 1.2.0-rc.1 ([8d4e4b2](https://github.com/AnotherStranger/conda-poetry-dev-setup/commit/8d4e4b281caafc3e090675755895ca0850313639))
+* **release:** 1.2.0-rc.2 ([5681cfb](https://github.com/AnotherStranger/conda-poetry-dev-setup/commit/5681cfba6077dd265d1f0c2c988337c0ee33e032))
+
+
+### Features
+
+* :sparkles: make env.yml configurable. ([4ce83b4](https://github.com/AnotherStranger/conda-poetry-dev-setup/commit/4ce83b48931c14a41ab1e992f01e0a06ff16d1a1))
+
+
+### Code Refactoring
+
+* update node action ([59d23cd](https://github.com/AnotherStranger/conda-poetry-dev-setup/commit/59d23cd1dee8af87bcb6855073629c0029a0aa85))
+
 ## [1.2.0-rc.2](https://github.com/AnotherStranger/conda-poetry-dev-setup/compare/v1.2.0-rc.1...v1.2.0-rc.2) (2024-02-28)
 
 
